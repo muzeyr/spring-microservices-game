@@ -1,0 +1,23 @@
+server:
+  port: 8760
+  error:
+    whitelabel:
+      enabled: false
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: true
+
+management:
+  security:
+    enabled: false
+    server:
+      port:8760
+      address:127.0.0.1
+      
+logging:
+  level:
+    com.game.eurekaserver: DEBUG
